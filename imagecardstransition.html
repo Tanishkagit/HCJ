@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMAGE CARDS TRANSITION</title>
+    <style>
+        body{
+            padding:8% 0% 0% 2%;
+            background-color: darkslategrey;
+            text-shadow: 5px 5px 5px rgb(94, 43, 43);
+            
+        }    
+        h1{
+            color: white;
+            text-align: center;
+            font-size: 50px;
+        }
+        .cards{
+             width: 30%;
+             height: 350px;
+             display: flex;
+             gap: 5px;
+        }
+        .cards img{
+            width:10%;
+            height:100%;
+            object-fit:cover;
+            border-radius: 10px;
+            border: 2px solid white;
+            transition: all ease 0.5s;
+            cursor: pointer;
+        }
+        .cards img:hover{
+            width:100%;
+            box-shadow: 5px 5px 5px white;
+        }
+    </style>
+</head>
+<body>
+    <h1><u>SHINCHAN CARDS TRANSITION</u></h1>
+    <div class="cards">
+        <img src="shin1.jpg" alt="image">
+        <img src="shin2.jpg" alt="image">
+        <img src="shin3.jpg" alt="image">
+        <img src="shin4.jpg" alt="image">
+        <img src="shin5.jpg" alt="image">
+    </div>
+</body>
+</html>
