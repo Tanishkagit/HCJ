@@ -1,0 +1,26 @@
+h1{
+    text-align: center;
+    background-color: yellow;
+    color: blue;
+}
+.box{
+    border: 1px solid black;
+    height: 100px;
+    width: 150px;
+    margin: 5px;
+    background-color: aqua;
+    border-radius: 10px;
+    text-align:center;
+
+}
+.box1{
+    display: inline-block;
+    border: 1px solid black;
+    height: 100px;
+    width: 150px;
+    margin: 4px;
+    background-color: aqua;
+    border-radius: 10px;
+    text-align: center;
+    
+}
