@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+}
+h1{
+    background: linear-gradient(90deg,rgb(236, 8, 8),rgb(173, 245, 5));
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+.box1{
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-image: url("shin6.jpg");
+    height: 300px;
+    width: 300px;
+    margin-left: 500px;
+}
+p{
+    background: linear-gradient(90deg,rgb(236, 8, 8),rgb(173, 245, 5));
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+h4{
+    background: linear-gradient(90deg,rgb(236, 8, 8),rgb(173, 245, 5));
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+button{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    margin-left: 560px;
+    font-size: 20px;
+}
+
+
+
