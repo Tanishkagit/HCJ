@@ -23,5 +23,18 @@ allbuttons.forEach((val)=>{
             playero=true;
         }
         val.disabled=true;
-    })
-})
+         checkwinnner();
+    });
+});
+const checkwinnner=()=>{
+    for(let  pattern of winnerpattern){
+        let posvalue1=allbuttons[pattern[0]].innerText;
+        let posvalue2=allbuttons[pattern[1]].innerText;
+        let posvalue3=allbuttons[pattern[2]].innerText;
+        if(posvalue1 !=="" && posvalue2!=="" && posvalue3!=""){
+            if(posvalue1===posvalue2 && posvalue2===posvalue3){
+                console.log("winner",posvalue1);
+            }
+        }
+    }
+}
