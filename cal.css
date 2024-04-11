@@ -1,0 +1,36 @@
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #e8eff3;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    background: #383737;
+    padding: 25px;
+    width: 350px;
+    border-radius: 10px;
+  }  
+  .inpt {
+    margin-bottom: 20px;
+    padding-left: 5px;
+  }
+  
+  .inpt input {
+    width: 100%;
+    font-size: 3.5rem;
+    text-align: end;
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+  
