@@ -1,7 +1,7 @@
 let box0=document.querySelectorAll(".box0");
-box0[0].innerText="HELLO";
-box0[1].innerText="HELLO";
-box0[2].innerText="HELLO";
+box0[0].innerText="HII";
+box0[1].innerText="HII";
+box0[2].innerText="HII";
 let box=document.querySelectorAll(".box");
 box[0].innerText="HELLO";
 box[1].innerText="HELLO";
