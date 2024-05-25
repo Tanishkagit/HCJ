@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BULB</title>
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+        }
+        .bulb{
+            height: 600px;
+            width: 600px;
+            border-radius: 50%;
+            margin-left: 40%;
+        }
+        button{
+            padding: 10px 50px;
+            font-size: 50px;
+            margin: 80px;
+            margin-left: 48%;
+            border-radius: 30px;
+            font-family: Verdana;
+            background-color: white;
+        }
+        p{
+            color: white;
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bulb"></div>
+    <button>ON</button>
+    <p> THE LIGHT IS OFF PLEASE TURN IT ON</p>
+</body>
+<script>
+let a=document.querySelector(".bulb");
+let b=document.querySelector("button");
+let pera=document.querySelector("p");
+let count=0;
+b.addEventListener("click",function(){
+    if(count==0){
+    a.style.backgroundColor = "yellow";
+    count=1;
+    b.innerText="OFF";
+    pera.innerText="NOW LIGHT IS ON";
+    }
+    else{
+        a.style.backgroundColor = "black";
+        count=0;
+        b.innerText="ON";
+        pera.innerText="THE LIGHT IS OFF PLEASE TURN IT ON";
+       }
+} )
+</script>
+</html>
