@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVING CURSOR</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+         html, body{
+            height: 100%;
+            width: 100%;
+        }
+        .box{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 200px;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>THIS IS A RECTANGAL</h1>0,reclocation.width/2,255,0,insiderec
+    <div class="box"></div>
+</body>
+<script>
+    let rect=document.querySelector(".box");
+    rect.addEventListener("mousemove",function (details) {
+        let reclocation=rec.getBoundingClientRect();
+        let insiderec=details.clientX - reclocation.left;
+        if(insiderec < reclocation.width / 2){
+            let redcolor= gsap.utils.mapRange(0,reclocation.width/2,255,0,insiderec);
+            gsap.to(rect,{
+                backgroundColor: `rgb(${redcolor},0,0)`,
+                ease: Power4,
+            });
+
+        }else{
+            let yellowcolor= gsap.utils.mapRange(reclocation.width/2,reclocation.width,0,255,insiderec);
+            gsap.to(recbox,{
+                backgroundColor: `rgb(0,0,${bluecolor})`,
+                ease: Power4
+            });
+        }
+    })
+    rect.addEventListener("mouseleave",function(){
+        gsap.to(rect,{
+            backgroundColor: "white";
+    });
+    })
+</script>
+</html>
