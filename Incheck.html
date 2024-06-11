@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INPUT CHECK</title>
+</head>
+<body>
+    <form id="form">
+        <label for="input1">Enter text:</label>
+        <input type="text" id="input1" name="input1">
+        <span id="error-msg" style="color: red; display: none;"> error!!!..input contains space</span>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+let inputcheck= document.getElementById('input1');
+    let errormsg = document.getElementById('error-msg');
+    inputcheck.addEventListener('input1', () => {
+        if (inputcheck.value.includes(' ')) {
+            errormsg.style.display = 'inline';
+        } else {
+            errormsg.style.display = 'none';
+        }
+    });
+    form.addEventListener('submit', (event) => {
+        if (inputcheck.value.includes(' ')) {
+            alert("Didn't submit this form becouse it contain space");
+        }
+        else{
+            alert("submit succesfully.");
+        }
+    });
+</script>
+</body>
+</html>
+
+
