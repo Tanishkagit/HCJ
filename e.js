@@ -1,3 +1,4 @@
+
 let box0=document.querySelectorAll(".box0");
 box0[0].innerText="HII";
 box0[1].innerText="HII";
