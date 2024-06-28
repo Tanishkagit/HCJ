@@ -33,7 +33,7 @@
     rect.addEventListener("mousemove",function (details) {
         let reclocation=rec.getBoundingClientRect();
         let insiderec=details.clientX - reclocation.left;
-        if(insiderec < reclocation.width / 2){
+        if(insiderec < reclocation.width/2){
             let redcolor= gsap.utils.mapRange(0,reclocation.width/2,255,0,insiderec);
             gsap.to(rect,{
                 backgroundColor: `rgb(${redcolor},0,0)`,
