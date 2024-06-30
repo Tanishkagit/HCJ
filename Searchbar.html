@@ -48,7 +48,7 @@
                     var highlight = text.cloneNode(true);
                     span.appendChild(highlight);
                     text.parentNode.replaceChild(span, text);
-                    return 1; // Highlighted
+                    return 1;
                 }
             } else if (node.nodeType === 1 && node.nodeName !== 'SCRIPT' && node.nodeName !== 'STYLE') {
                 for (var i = 0; i < node.childNodes.length; i++) {
