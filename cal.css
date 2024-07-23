@@ -32,4 +32,8 @@
     color: #fff;
     border: none;
   }
+.box{
+ background-color: black;
+ display: flex;
+}
   
