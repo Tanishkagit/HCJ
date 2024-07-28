@@ -32,7 +32,7 @@
             highlightedElements.forEach(function(el) {
                 var parent = el.parentNode;
                 parent.replaceChild(document.createTextNode(el.textContent), el);
-                parent.normalize(); // Merge adjacent text nodes
+                parent.normalize();
             });
         }
 
