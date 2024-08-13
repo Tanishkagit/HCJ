@@ -4,7 +4,6 @@
     font-family: "sans-serif";
     box-sizing: border-box;
   }
-  
   body{
     background-color: #e8eff3;
     min-height: 100vh;
@@ -12,8 +11,7 @@
     align-items: center;
     justify-content: center;
   }
-  
-  .container {
+.container {
     background: #383737;
     padding: 25px;
     width: 350px;
