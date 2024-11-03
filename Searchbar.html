@@ -22,7 +22,7 @@
         function searchContent() {
             var searchText = document.getElementById('searchBar').value.toLowerCase();
             clearHighlights();
-            if (searchText === ' ') return;
+            if (searchText === '') return;
 
             highlightText(document.body, searchText);
         }
