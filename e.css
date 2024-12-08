@@ -3,7 +3,7 @@ h1{
     background-color: yellow;
     color: blue;
 }
-.box0{
+.box{
     display: inline-block;
     border: 1px solid black;
     height: 100px;
