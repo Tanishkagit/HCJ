@@ -16,7 +16,7 @@
     <p>Here is another paragraph with different content. Feel free to try searching for words in this paragraph too.</p>
 
     <input type="text" id="searchBar" placeholder="Search">
-    <button onclick="searchContent()">Search</button>
+    <button onclick="searchContent()">Search keywords</button>
 
     <script>
         function searchContent() {
@@ -37,7 +37,7 @@
         }
 
         function highlightText(node, searchText) {
-            if (node.nodeType === 3) { // Text node
+            if (node.nodeType === 3) { 
                 var val = node.nodeValue.toLowerCase();
                 var idx = val.indexOf(searchText);
                 if (idx !== -1) {
